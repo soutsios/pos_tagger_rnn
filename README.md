@@ -17,6 +17,11 @@ Unlike feed-forward neural networks, **recurrent neural networks (RNNs)** can us
 3.	Add an extra layer with ELMo deep contextualized word representations to obtain context-sensitive word embeddings.
 4.	Concatenate ELMo deep contextualized word representations with word embeddings.
 
+## Word + Character level model
+The architecture implemented in model 2:
+
+<img src="https://neuralner.files.wordpress.com/2018/08/word_char_level_ner.png" width="80%" height="80%">
+
 ## Experimental Results - Conclusions
 Sequence labeling systems traditionally require large amounts of task-specific knowledge in the form of hand-crafted features and data pre-processing. In this work, we experimented with neural network architectures that benefit from both word- and character-level representations automatically, by using bidirectional RNNs.
 The results of our 4 experiments are summarized in Table 2 where appropriate evaluation metrics are given for every experiment. A Baseline and also the best result with a fully connected FFNN are included.
