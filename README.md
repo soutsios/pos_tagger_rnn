@@ -38,7 +38,7 @@ We reached **97.39%** accuracy, using a one-layer BiRNN with GRU cells, and repr
 2. ELMo seems to catch basic syntax needed for POS tagging better at first biLM layer than the weighted sum of the 3 layers.
 3. Adding pre-trained vectors to ELMo contextualized representations provides a marginal improvement over ELMO only model.
 4. To present the evaluation results in a unified manner for all 4 experiments wasn’t an easy task. So we used the appropriate transformations and our functions y2label(), make_prediction(), find_error(), to a lot of tasks like in:
-   - Classification report,
-   - Make a prediction for a test sentence,
-   - Tag an unknown sentence,
+   - Classification report
+   - Make a prediction for a test sentence
+   - Tag an unknown sentence
    - Frequent types of mistakes
