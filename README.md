@@ -8,10 +8,10 @@ It is worth mentioning that we have faced many challenges that we have successfu
 
 Special care was taken for:
 1.	Reproducibility reasons -->> seed the numpy generator before every Keras Layer.
-2.	Exact accuracy estimation -->> exclude predictions for –PAD- character (Keras zero_mask, mask variable in our y2label() where from the flatted label sequence, –PAD- character is excluded).
+2.	Exact accuracy estimation -->> exclude predictions for –PAD- character (Keras *zero_mask*, *mask* variable in our function *y2label()* where from the flatted label sequence, –PAD- character is excluded).
 
 ## Implemented Models
-Unlike feed-forward neural networks, **recurrent neural networks (RNNs)** can use their internal state (memory) to process sequences of inputs. We take advantage of this temporal dynamic behavior of RNNs to automatically extract features. We use a bi-directional RNN and experiment with GRU or LSTM cells. We implement 4 models that are gradually progressing to the toughest (1-4):
+Unlike feed-forward neural networks, **recurrent neural networks (RNNs)** can use their internal state (memory) to process sequences of inputs. We take advantage of this temporal dynamic behavior of RNNs to automatically extract features. We use a bi-directional RNN and experiment with *GRU* or *LSTM* cells. We implement 4 models that are gradually progressing to the toughest (1-4):
 1.	A Bi-directional RNN with pre-trained word embeddings.
 2.	Enhance the above model with an extra RNN layer to produce word embeddings from characters, concatenating each resulting character-based word embedding with the corresponding pre-trained word embedding.
 3.	Add an extra layer with ELMo deep contextualized word representations to obtain context-sensitive word embeddings.
