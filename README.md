@@ -42,3 +42,6 @@ We reached **97.39%** accuracy, using a one-layer BiRNN with GRU cells, and repr
    - Make a prediction for a test sentence
    - Tag an unknown sentence
    - Frequent types of mistakes
+
+## Acknowledgement
+<a href="https://eclass.aueb.gr/courses/INF210/">Natural Language Processing</a> course is part of the MSc in Computer Science of the Department of Informatics, <a href="https://aueb.gr/en">Athens University of Economics and Business</a>. The course covers algorithms, models and systems that allow computers to process natural language texts and/or speech.
